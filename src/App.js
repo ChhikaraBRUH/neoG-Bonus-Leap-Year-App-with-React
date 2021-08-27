@@ -7,17 +7,17 @@ export default function App() {
 	function onChangeHandler(event) {
 		var inputYear = event.target.value;
 		if (inputYear % 4 === 0 && inputYear % 400 !== 0) {
-			setLeapStatus(inputYear + " IS a leap year!");
+			setLeapStatus("✔️" + inputYear + " IS a leap year!");
 		} else if (inputYear == "") {
 			setLeapStatus("");
 		} else {
-			setLeapStatus(inputYear + " IS NOT a leap year!");
+			setLeapStatus("❌" + inputYear + " IS NOT a leap year!");
 		}
 	}
 
 	return (
 		<div className="App">
-			<h1>Leap Year Checker</h1>
+			<h2>Enter the year below 👇</h2>
 			<input onChange={onChangeHandler} />
 			<div className="output">{leapStatus}</div>
 		</div>
