@@ -1,0 +1,19 @@
+.App {
+	font-family: lato, sans-serif;
+	text-align: center;
+}
+
+input {
+	padding: 1rem;
+	font-family: lato, sans-serif;
+	font-size: 1rem;
+	min-width: 30%;
+}
+
+.output {
+	padding: 1rem;
+	font-family: lato, sans-serif;
+	margin: auto;
+	font-size: 1rem;
+	font-weight: bold;
+}
